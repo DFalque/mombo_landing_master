@@ -1,0 +1,112 @@
+.hero {
+  &__container {
+    text-align: center;
+    min-height: 695px;
+    z-index: 5;
+  }
+
+  $flex-breakpoint: "md";
+
+  &__containerHero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 695px;
+    margin: auto;
+    max-width: 1180px;
+
+    @include use-breakpoint($flex-breakpoint) {
+      flex-direction: row;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 73.75rem;
+    height: 43.438rem;
+    background: #ea3a60;
+    opacity: 0.1;
+    border-radius: 50px;
+    clip-path: polygon(0% 0%, 0% 100%, 80% 82%, 100% 0%);
+    z-index: -2;
+  }
+
+  &__textoHero {
+    opacity: 1;
+    z-index: 1;
+    color: red;
+    background: yellow;
+  }
+
+  $img-lg-breakpoint: "lg";
+
+  &__containerText {
+    // width: 50%;
+    top: 15px;
+    text-align: left;
+    padding: 0 1rem;
+
+    @include use-breakpoint($flex-breakpoint) {
+      padding: 0 5rem;
+      padding-right: 0;
+    }
+  }
+
+  &__tittle {
+    @include use-font("lg");
+    font-family: Walsheim, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0f2137;
+
+    @include use-breakpoint($flex-breakpoint) {
+      @include use-font("xl");
+    }
+
+    @include use-breakpoint("lg") {
+      line-height: 5.3125rem;
+      font-size: 4.375rem;
+    }
+  }
+
+  &__text {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #0f2137;
+  }
+
+  &__link {
+    @extend %link-primary;
+  }
+
+  &__image-column {
+    width: 100%;
+
+    @include use-breakpoint($flex-breakpoint) {
+      min-width: 50%;
+    }
+  }
+
+  &__image {
+    @extend %fluid-svg;
+
+    @include use-breakpoint($img-lg-breakpoint) {
+      width: 36rem;
+      height: 48.6875rem;
+    }
+  }
+}

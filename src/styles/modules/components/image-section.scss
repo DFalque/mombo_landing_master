@@ -1,0 +1,37 @@
+%image-section {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+%image-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 100%;
+
+  @include use-breakpoint("md") {
+    flex-direction: row;
+  }
+}
+
+%image-section-body {
+  width: 100%;
+
+  @include use-breakpoint("md") {
+    width: 50%;
+  }
+}
+
+%image-section-image-column {
+  margin-top: 2rem;
+  width: 100%;
+  z-index: -1;
+
+  @include use-breakpoint("md") {
+    margin-top: 0;
+    width: 50%;
+  }
+}

@@ -1,0 +1,110 @@
+.agencias {
+  /* Headers of agencias  */
+  &__contenedorAgencias {
+    width: 100% !important;
+    margin-top: 100px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  &__explicacionAgencias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  $expand-item: "sm";
+
+  &__explicacionAgenciasApartado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+
+    @include use-breakpoint($expand-item) {
+      flex-direction: row;
+    }
+
+    @include use-breakpoint("md") {
+      width: 50%;
+    }
+  }
+  &__explicacionAgenciasApartadoTexto {
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+
+    @include use-breakpoint($expand-item) {
+      width: 75%;
+    }
+  }
+  &__titulo {
+    @extend %icons-section__item__title;
+  }
+
+  &__parrafo {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  /*XXXXXXX Headers of agencias End XXXXXXXX  */
+
+  &__Para_Agencias {
+    font-family: "Walsheim, sans-serif";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ee3259;
+  }
+  &__Para_Agencias2 {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  &__las_agencias {
+    @extend %icons-section__title;
+  }
+  &__Bult {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--1;
+  }
+  &__deffination {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+
+  &__Write {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--2;
+  }
+
+  &__Clock {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--3;
+  }
+  &__Compass {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--4;
+  }
+}

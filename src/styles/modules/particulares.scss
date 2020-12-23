@@ -1,0 +1,82 @@
+.particulares {
+  &__contenedor {
+    @extend %image-section;
+    margin-bottom: 100px;
+  }
+  &__introducccion {
+    text-align: center;
+  }
+  &__parrafoIntroduccion {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ee3259;
+  }
+  &__parrafoIntroduccion2 {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+    text-align: center;
+  }
+  &__tituloIntroducccion {
+    font-family: Walsheim, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0f2137;
+  }
+  &__explicacion {
+    @extend %image-section-content;
+  }
+  &__explicacionTexto {
+    @extend %image-section-body;
+  }
+  &__explicacionImagen {
+    @extend %image-section-image-column;
+  }
+  &__titulo {
+    font-family: Walsheim, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+  &__parrafo {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+  &__parrafoResaltado {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ea3a60;
+  }
+  &__Contactar {
+    @extend %link-primary;
+  }
+}

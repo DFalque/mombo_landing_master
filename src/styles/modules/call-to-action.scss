@@ -1,0 +1,15 @@
+.call-to-action {
+  @extend %card;
+
+  &__body {
+    @extend %card__body;
+  }
+
+  &__title {
+    @extend %card__title;
+  }
+
+  &__subtitle {
+    @extend %card__subtitle;
+  }
+}

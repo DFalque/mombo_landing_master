@@ -1,0 +1,40 @@
+.herramientas {
+  &__contenedorHerramientas {
+    @extend %icons-section;
+  }
+  &__explicacionHerramientas {
+    @extend %icons-section__content;
+  }
+  &__explicacionHerrameintasApartado {
+    @extend %icons-section__item;
+  }
+  &__body {
+    @extend %icons-section__item__body;
+  }
+  &__titulo {
+    @extend %icons-section__item__title;
+  }
+  &__parrafo {
+    @extend %icons-section__item__paragraph;
+  }
+
+  &__heading1 {
+    @extend %icons-section__title;
+  }
+  &__head {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--1;
+  }
+  &__chartbar {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--2;
+  }
+  &__notes {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--3;
+  }
+  &__chat {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--4;
+  }
+}

@@ -1,0 +1,126 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6;
+  $background-color: white;
+  $nav-expand-breakpoint: "md";
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    background-color: $background-color;
+    align-items: center;
+    justify-content: space-between;
+
+    @include use-breakpoint($nav-expand-breakpoint) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__containerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__nav {
+    padding: 1rem 0;
+    background-color: $background-color;
+    display: flex;
+    flex-grow: 4;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+
+    @include use-breakpoint($nav-expand-breakpoint) {
+      flex-direction: row;
+    }
+  }
+
+  &__containerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__link {
+    font-family: Walsheim, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__contact {
+    @extend %link-primary;
+    padding: 1rem 2rem;
+  }
+
+  &__tittleLogo {
+    font-family: Walsheim, sans-serif;
+    color: #ee3259;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  &__toggle {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+
+    @include use-breakpoint($nav-expand-breakpoint) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__mobile {
+    width: 100%;
+    background-color: $background-color;
+    padding-bottom: 1rem;
+    flex-basis: 100%;
+
+    @include use-breakpoint($nav-expand-breakpoint) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    display: none;
+
+    @include use-breakpoint($nav-expand-breakpoint) {
+      width: 100%;
+      display: flex;
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.clientes {
+  &__contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__PARA {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ee3259;
+  }
+  &__client {
+    font-family: Walsheim, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__para {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+    text-align: center;
+  }
+  &__para2 {
+    font-family: Noto Serif SC;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0f2137;
+  }
+  &__map {
+    width: 100%;
+  }
+}

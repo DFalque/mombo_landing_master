@@ -1,0 +1,104 @@
+.inteligencia {
+  &__contenedor {
+    @extend %icons-section;
+  }
+  &__introduccion {
+    text-align: center;
+  }
+  &__parrafoIntroduccion {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ee3259;
+  }
+  &__tituloIntroducccion {
+    font-family: Walsheim, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0f2137;
+  }
+  &__explicacion {
+    @extend %icons-section__content;
+    align-items: center;
+    overflow-x: hidden;
+
+    @include use-breakpoint("sm") {
+      flex-direction: column;
+    }
+
+    @include use-breakpoint("md") {
+      flex-direction: row;
+    }
+  }
+  &__fondo {
+    position: absolute;
+    z-index: -1;
+  }
+  &__fondoTexto {
+    font-family: Walsheim, sans-serif;
+    color: #ee3259;
+    font-size: 5rem;
+    text-decoration: none;
+    margin: 0;
+    opacity: 0.1;
+
+    @include use-breakpoint("md") {
+      font-size: 10rem;
+    }
+
+    @include use-breakpoint("lg") {
+      font-size: 18rem;
+    }
+  }
+  &__apartado {
+    @extend %icons-section__item;
+    @include use-breakpoint("sm") {
+      flex-direction: column;
+    }
+  }
+  &__contenedorNumero {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--1;
+    background: linear-gradient(41deg, #ea3a60 -5.57%, #d635a7 105.57%);
+    box-shadow: 8px 8px 15px rgba(233, 24, 105, 0.15);
+  }
+  &__numero {
+    font-family: Walsheim, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 43px;
+    letter-spacing: 0px;
+    /* text-align: left; */
+    color: #ffffff;
+  }
+  &__parrafo {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+    margin-bottom: 40px;
+  }
+  &__titulo {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}

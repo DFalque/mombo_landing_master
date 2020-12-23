@@ -1,0 +1,48 @@
+.video {
+  position: relative;
+  margin: 6rem 0;
+
+  &__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.125rem;
+    width: 100%;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    border: none;
+    background: none;
+  }
+
+  &__icon {
+    $size: 5rem;
+    width: $size;
+    height: $size;
+
+    @include use-breakpoint("md") {
+      $size: 12.5rem;
+      width: $size;
+      height: $size;
+    }
+  }
+
+  &__embed {
+    width: 100%;
+    @include use-breakpoint("md") {
+      height: 31.25rem;
+    }
+  }
+
+  &__content {
+    &__header {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

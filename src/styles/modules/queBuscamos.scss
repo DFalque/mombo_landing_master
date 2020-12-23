@@ -1,0 +1,93 @@
+.que-buscamos {
+  @extend %card;
+
+  &__body {
+    @extend %card__body;
+    max-width: 53.5625rem;
+  }
+
+  &__title {
+    @extend %card__title;
+  }
+
+  &__subtitle {
+    @extend %card__subtitle;
+    margin-bottom: 2.75rem;
+  }
+
+  $border-radius: 3.125rem;
+
+  &__input-group {
+    background: #ffffff;
+    border-radius: $border-radius;
+    padding: 0.3125rem;
+    max-width: 37.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__input {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 3.75rem;
+    border: none;
+    width: 100%;
+    border-radius: $border-radius;
+
+    &::placeholder {
+      color: #ea3a60;
+    }
+  }
+
+  &__button {
+    $background: #0b9fd9;
+    filter: drop-shadow(8px 8px 15px rgba(233, 24, 105, 0.15));
+    background: $background;
+    border-radius: 50px;
+    padding: 13px 39px;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.16px;
+    color: #ffffff;
+    border: none;
+
+    &:hover {
+      background-color: darken($background, 10%);
+    }
+  }
+
+  &__icon {
+    margin-left: 0.625rem;
+    $size: 1.5rem;
+    width: $size;
+    height: $size;
+  }
+
+  $merge-button-breakpoint: "sm";
+
+  &__desktop-button {
+    display: none;
+
+    @include use-breakpoint($merge-button-breakpoint) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__mobile-button {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    @include use-breakpoint($merge-button-breakpoint) {
+      display: none;
+    }
+  }
+}

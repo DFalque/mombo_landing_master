@@ -1,0 +1,20 @@
+%link-primary {
+  $background: #ea3a60;
+  font-family: Walsheim, sans-serif;
+  background: $background;
+  color: white;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.1599999964237213px;
+  box-shadow: 0.5rem 0.5rem 0.9375rem rgba(234, 58, 96, 0.3);
+  padding: 1.25rem 0.9375rem;
+  border-radius: 50px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($background, 10%);
+    text-decoration: underline;
+  }
+}

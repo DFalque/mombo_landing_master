@@ -1,0 +1,38 @@
+.buscar {
+  &__contenedor {
+    @extend %icons-section;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  &__content {
+    @extend %icons-section__content;
+    justify-content: flex-start;
+  }
+  &__item {
+    @extend %icons-section__item;
+    @include use-breakpoint("md") {
+      width: 33%;
+    }
+  }
+  &__body {
+    @extend %icons-section__item__body;
+  }
+  &__titulo {
+    @extend %icons-section__item__title;
+  }
+  &__parrafo {
+    @extend %icons-section__item__paragraph;
+  }
+  &__user {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--1;
+  }
+  &__Cofee {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--2;
+  }
+  &__doller {
+    @extend %icons-section__item__icon;
+    @extend %icons-section__item__icon--3;
+  }
+}

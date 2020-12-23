@@ -1,0 +1,37 @@
+%card {
+  filter: drop-shadow(8px 8px 15px rgba(233, 24, 105, 0.15));
+  border-radius: 3.125rem;
+  padding: 4.625rem 1rem 4.6875rem;
+  background: #ea3a60;
+  background-image: url(/wave-pattern.svg);
+  margin: 6rem 0;
+}
+
+%card__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+%card__body {
+  max-width: 40.625rem;
+  margin: 0 auto;
+}
+
+%card__title {
+  @extend %card__text;
+  font-size: 2.25rem;
+  line-height: 3.4375rem;
+  text-align: center;
+  letter-spacing: -0.0938rem;
+  font-weight: 700;
+}
+
+%card__subtitle {
+  @extend %card__text;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+}

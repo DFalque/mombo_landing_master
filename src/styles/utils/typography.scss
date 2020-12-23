@@ -1,0 +1,3 @@
+@mixin use-font($size) {
+  font-size: map-get($map: $font-sizes, $key: $size);
+}

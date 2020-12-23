@@ -1,0 +1,94 @@
+.tecnologia {
+  &__title {
+    @extend %icons-section__title;
+  }
+
+  &__contenedorAgencias {
+    @extend %icons-section;
+  }
+  &__explicacionAgencias {
+    @extend %icons-section__content;
+  }
+  &__explicacionAgenciasApartado {
+    @extend %icons-section__item;
+  }
+  &__explicacionAgenciasApartadoTexto {
+    @extend %icons-section__item__body;
+  }
+  &__titulo {
+    @extend %icons-section__item__title;
+  }
+  &__paragraph {
+    @extend %icons-section__item__paragraph;
+  }
+  &__technologia {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ee3259;
+  }
+  &__user {
+    @extend %icons-section__item__icon;
+    background: linear-gradient(41deg, #ea3a60 -5.57%, #d635a7 105.57%);
+    box-shadow: 8px 8px 15px rgba(233, 24, 105, 0.15);
+  }
+  &__para {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+  &__happy {
+    @extend %icons-section__item__icon;
+    background: linear-gradient(41deg, #ff416c -4.02%, #ff4b2b 104.02%);
+    box-shadow: 8px 8px 15px rgba(255, 73, 55, 0.15);
+  }
+  &__para2 {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+  &__graphic {
+    @extend %icons-section__item__icon;
+    background: linear-gradient(90deg, #1a2980 0%, #26d0ce 100%);
+    box-shadow: 8px 8px 15px rgba(37, 198, 201, 0.15);
+  }
+  &__para3 {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+  &__tool {
+    @extend %icons-section__item__icon;
+    background: linear-gradient(41deg, #f46b45 -4.02%, #eea849 104.02%);
+    box-shadow: 8px 8px 15px rgba(239, 157, 72, 0.15);
+  }
+  &__para4 {
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+  }
+}
