@@ -10,17 +10,11 @@ const Particulares = ({ image }) => {
     <div className="particulares__contenedor" id={sectionIds.particulares}>
       <div className="particulares__introducion">
         <p className="particulares__parrafoIntroduccion">PARA PARTICULARES</p>
-        <h2 className="particulares__tituloIntroducccion">
-          Organiza para tí, organiza para otros.
-        </h2>
-        <p className="particulares__parrafoIntroduccion2">
-          Todos llevamos una agencia dentro, aprovéchalo.
-        </p>
       </div>
       <div className="particulares__explicacion">
         <div className="particulares__explicacionTexto">
           <h2 className="particulares__titulo">
-            El futuro no es solo para las agencias, forma parte del cambio
+            Organiza para tí, organiza para otros.
           </h2>
           <p className="particulares__parrafo">
             Comparte tu experiencia y gana algo más que las gracias. Con Mombo

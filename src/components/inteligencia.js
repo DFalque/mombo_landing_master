@@ -28,10 +28,10 @@ const Inteligencia = () => {
           <div className="inteligencia__contenedorNumero">
             <h1 className="inteligencia__numero">2</h1>
           </div>
-          <h5 className="inteligencia__titulo">Recopilación de datos</h5>
+          <h5 className="inteligencia__titulo">Aplicación de Algoritmos</h5>
           <p className="inteligencia__parrafo">
-            Recogemos el comportamiento de los usuarios, los viajes reservados y
-            de los itinerarios y los almacenamos en nuestra base de datos.
+            Aplicamos técnicas de Machine learning a nuestra base de datos, para
+            identificar patrones, tendencias y clasificación de usuarios.
           </p>
         </div>
         <div className="inteligencia__apartado">
@@ -39,10 +39,10 @@ const Inteligencia = () => {
           <div className="inteligencia__contenedorNumero">
             <h1 className="inteligencia__numero">3</h1>
           </div>
-          <h5 className="inteligencia__titulo">Recopilación de datos</h5>
+          <h5 className="inteligencia__titulo">Clasificación de patrones</h5>
           <p className="inteligencia__parrafo">
-            Recogemos el comportamiento de los usuarios, los viajes reservados y
-            de los itinerarios y los almacenamos en nuestra base de datos.
+            Recogemos los patrones más relevantes y clasificamos a los viajeros
+            según su comportamiento.
           </p>
         </div>
         <div className="inteligencia__apartado">
@@ -50,10 +50,11 @@ const Inteligencia = () => {
           <div className="inteligencia__contenedorNumero">
             <h1 className="inteligencia__numero">4</h1>
           </div>
-          <h5 className="inteligencia__titulo">Recopilación de datos</h5>
+          <h5 className="inteligencia__titulo">Soluciones a medida</h5>
           <p className="inteligencia__parrafo">
-            Recogemos el comportamiento de los usuarios, los viajes reservados y
-            de los itinerarios y los almacenamos en nuestra base de datos.
+            Utilizamos los resultados para mejorar nuestras plataforma y poner
+            nuevas herramientas más inteligentes al servicio de las agencias de
+            viaje.
           </p>
         </div>{" "}
         <div className="inteligencia__fondo">

@@ -33,8 +33,14 @@
     background: #ea3a60;
     opacity: 0.1;
     border-radius: 50px;
-    clip-path: polygon(0% 0%, 0% 100%, 80% 82%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     z-index: -2;
+      @include use-breakpoint($flex-breakpoint) {
+        clip-path: polygon(0% 0%, 0% 100%, 80% 82%, 100% 0%);
+
+    }
+    
+
   }
 
   &__textoHero {
