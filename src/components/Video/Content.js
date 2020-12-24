@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 
 import Frame from "../Frame"
+import Frame2 from "../Frame2"
+
 import CloseButton from "../CloseButton"
 
 export class Content extends Component {
@@ -11,7 +13,7 @@ export class Content extends Component {
         <div className="video__content__header">
           <CloseButton close={close} />
         </div>
-        <Frame />
+        <Frame2 />
       </div>
     )
   }

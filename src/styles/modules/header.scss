@@ -12,6 +12,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+  // position: fixed;
+    margin: 0;
+    padding: 0;
+
   }
 
   &__container {
@@ -21,7 +26,7 @@
     max-width: 1100px;
     height: 100%;
     display: flex;
-    background-color: $background-color;
+   // background-color: $background-color;
     align-items: center;
     justify-content: space-between;
 
@@ -34,13 +39,25 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 70%;
+
+
+    @include use-breakpoint($nav-expand-breakpoint) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    //flex-grow: 3;
+
+
+    }
   }
 
   &__nav {
-    padding: 1rem 0;
-    background-color: $background-color;
     display: flex;
-    flex-grow: 4;
+    padding: 1rem 0;
+    //background-color: $background-color;
+    //flex-grow: 4;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
@@ -48,6 +65,8 @@
 
     @include use-breakpoint($nav-expand-breakpoint) {
       flex-direction: row;
+      flex-grow: 1;
+
     }
   }
 
@@ -116,6 +135,8 @@
 
   &__desktop {
     display: none;
+   // width: 100%;
+   // background-color: red;
 
     @include use-breakpoint($nav-expand-breakpoint) {
       width: 100%;
