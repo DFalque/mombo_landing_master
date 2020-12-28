@@ -10,7 +10,7 @@
     @extend %image-section-body;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   justify-content: center;
 
     @include use-breakpoint("md") {
       width: 50%;
@@ -44,6 +44,20 @@
     letter-spacing: 0px;
     text-align: left;
     color: #0f2137;
+  }
+
+  &__mainTextP{
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0f2137;
+    margin: 0;
+   
+
   }
   &__deffination2 {
     font-family: Walsheim, sans-serif;

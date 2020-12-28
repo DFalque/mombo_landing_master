@@ -18,10 +18,18 @@
 
 %icons-section__content {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 100px;
   width: 100%;
+
+  @include use-breakpoint("md") {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
 }
 
 $expand-item: "sm";
@@ -31,19 +39,37 @@ $expand-item: "sm";
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 1rem;
+  
 
-  @include use-breakpoint($expand-item) {
+  @include use-breakpoint("sm") {
+    margin: auto;
+    width: 75%;
+
+  }
+
+  @include use-breakpoint("md") {
+    margin: 0;
     flex-direction: row;
     width: 50%;
+
   }
+
+
 }
 
 %icons-section__item__body {
-  /* display: flex; */
+  display: flex; 
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  @include use-breakpoint($expand-item) {
+
+  @include use-breakpoint("sm") {
+
+
+  }
+
+  @include use-breakpoint("md") {
     width: 75%;
   }
 }
@@ -56,6 +82,8 @@ $expand-item: "sm";
   line-height: 22px;
   letter-spacing: 0px;
   text-align: left;
+  margin-top: 12px;
+  margin-bottom: 15px;
 }
 
 %icons-section__item__paragraph {
@@ -65,7 +93,10 @@ $expand-item: "sm";
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  text-align: left;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px
+
 }
 
 %icons-section__item__icon {

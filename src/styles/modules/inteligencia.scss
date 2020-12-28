@@ -63,6 +63,9 @@
     @include use-breakpoint("sm") {
       flex-direction: column;
     }
+    @include use-breakpoint("md") {
+      width: 45%;
+    }
   }
   &__contenedorNumero {
     @extend %icons-section__item__icon;

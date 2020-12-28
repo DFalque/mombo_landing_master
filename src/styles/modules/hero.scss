@@ -58,14 +58,31 @@
     text-align: left;
     padding: 0 1rem;
 
-    @include use-breakpoint($flex-breakpoint) {
+
+
+    @include use-breakpoint("sm") {
+
+    }
+
+    @include use-breakpoint("md") {
+      align-self: flex-start;
       padding: 0 5rem;
       padding-right: 0;
     }
+
+
+    @include use-breakpoint("lg") {
+      //display: flex;
+      //flex-direction: column;
+      align-self: flex-start;
+      padding: 0 5rem;
+      padding-right: 0;
+    }
+
+
   }
 
   &__tittle {
-    @include use-font("lg");
     font-family: Walsheim, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -73,14 +90,24 @@
     text-align: left;
     color: #0f2137;
 
-    @include use-breakpoint($flex-breakpoint) {
-      @include use-font("xl");
+
+
+    @include use-breakpoint("sm") {
+      line-height: 3.3125rem;
+      font-size: 2.375rem;
+    }
+
+    @include use-breakpoint("md") {
+      line-height: 4.9125rem;
+      font-size: 3.075rem;
     }
 
     @include use-breakpoint("lg") {
       line-height: 5.3125rem;
       font-size: 4.375rem;
     }
+
+
   }
 
   &__text {
@@ -111,7 +138,7 @@
   &__image {
     @extend %fluid-svg;
 
-    @include use-breakpoint($img-lg-breakpoint) {
+    @include use-breakpoint("md") {
       width: 36rem;
       height: 48.6875rem;
     }

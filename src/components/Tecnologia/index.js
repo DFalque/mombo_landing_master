@@ -13,8 +13,8 @@ const Tecnologia = () => {
       </div>
       <div className="tecnologia__explicacionAgencias">
         <div className="tecnologia__explicacionAgenciasApartado">
-          <div>
-            <User className="tecnologia__user" />
+          <div className="tecnologia__user">
+            <User />
           </div>
 
           <div className="tecnologia__explicacionAgenciasApartadoTexto">
@@ -30,8 +30,8 @@ const Tecnologia = () => {
           </div>
         </div>
         <div className="tecnologia__explicacionAgenciasApartado">
-          <div>
-            <Happy className="tecnologia__happy" />
+          <div className="tecnologia__happy">
+            <Happy />
           </div>
 
           <div className="tecnologia__explicacionAgenciasApartadoTexto">
@@ -47,8 +47,8 @@ const Tecnologia = () => {
           </div>
         </div>
         <div className="tecnologia__explicacionAgenciasApartado">
-          <div>
-            <Graphic className="tecnologia__graphic" />
+          <div className="tecnologia__graphic">
+            <Graphic />
           </div>
 
           <div className="tecnologia__explicacionAgenciasApartadoTexto">
@@ -64,8 +64,8 @@ const Tecnologia = () => {
           </div>
         </div>
         <div className="tecnologia__explicacionAgenciasApartado">
-          <div>
-            <Tool className="tecnologia__tool" />
+          <div className="tecnologia__tool">
+            <Tool />
           </div>
 
           <div className="tecnologia__explicacionAgenciasApartadoTexto">

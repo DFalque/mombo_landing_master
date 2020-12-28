@@ -15,15 +15,18 @@ const App = () => {
         <div className="app__explicacionApp">
           <div className="app__explicacionAppTexto">
             <h2 className="app__defination">
+              Si no estás en una app móvil no estás donde tienes que estar.
+            </h2>
+            <p className="app__mainTextP">
               Ya no es necesario que gastes tus recursos y tiempo en desarrollar
               aplicaciones y páginas web, aquí tienes todo.
-            </h2>
+            </p>
             <p className="app__deffination2">
               Hemos construido nuestra aplicación con el máximo cuidado posible,
               con una experiencia de usuario excepcional para hacer todo más
               facil y atractivo.
             </p>
-            <div style={{ marginTop: "60px" }}>
+            <div>
               <button className="app__varapp" onClick={open}>
                 Ver App
               </button>

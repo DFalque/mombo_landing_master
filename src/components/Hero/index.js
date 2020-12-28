@@ -14,9 +14,8 @@ const Hero = () => {
             Lleva el futuro a tu Agencia de Viajes
           </h1>
           <p className="hero__text">
-            Si no estás en una app móvil no estás donde tienes que estar. Todo
-            lo que necesitas para brindar un excelente servicio a tus clientes
-            en un sólo lugar.
+            Todo lo que necesitas para brindar un excelente servicio a tus
+            clientes en un sólo lugar.
           </p>
           <div style={{ marginTop: "60px" }}>
             <a className="hero__link" href={link}>

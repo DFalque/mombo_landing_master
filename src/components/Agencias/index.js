@@ -79,14 +79,11 @@ const Agencias = () => {
           <div className="agencias__explicacionAgenciasApartadoTexto">
             {" "}
             <div style={{ width: "55%" }}>
-              <h5 className="agencias__titulo">
-                Un lugar donde encontrar Inspiración
-              </h5>
+              <h5 className="agencias__titulo">Un lugar donde Inspirarse</h5>
             </div>
             <p className="agencias__deffination">
-              La decisión de iniciar un viaje, de a donde ir o que hacer, suele
-              ser espontánea, hasta ahora. Tus clientes encontrarán guías,
-              recomendaciones y la inspiración que necesitan.
+              Tus clientes encontrarán guías, recomendaciones, ofertas y todo lo
+              que necesitan para encontrar inspiración en sus próximos viajes.
             </p>
           </div>
         </div>

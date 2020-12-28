@@ -7,19 +7,89 @@
     @extend %icons-section;
   }
   &__explicacionAgencias {
-    @extend %icons-section__content;
+    //@extend %icons-section__content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+  
+    @include use-breakpoint("md") {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+  
+    }
   }
   &__explicacionAgenciasApartado {
-    @extend %icons-section__item;
+    //@extend %icons-section__item;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    
+  
+    @include use-breakpoint("sm") {
+      margin: auto;
+      width: 75%;
+  
+    }
+  
+    @include use-breakpoint("md") {
+      margin: 0;
+      flex-direction: row;
+      width: 50%;
+  
+    }
+
+
+
   }
   &__explicacionAgenciasApartadoTexto {
-    @extend %icons-section__item__body;
+   //@extend %icons-section__item__body;
+   display: flex; 
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-direction: column;
+ 
+ 
+   @include use-breakpoint("sm") {
+ 
+ 
+   }
+ 
+   @include use-breakpoint("md") {
+     width: 75%;
+   }
+
+
   }
   &__titulo {
-    @extend %icons-section__item__title;
+    //@extend %icons-section__item__title;
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    
   }
   &__paragraph {
-    @extend %icons-section__item__paragraph;
+    //@extend %icons-section__item__paragraph;
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px
+    
   }
   &__technologia {
     font-family: Walsheim, sans-serif;
@@ -33,8 +103,8 @@
   }
   &__user {
     @extend %icons-section__item__icon;
-    background: linear-gradient(41deg, #ea3a60 -5.57%, #d635a7 105.57%);
-    box-shadow: 8px 8px 15px rgba(233, 24, 105, 0.15);
+    @extend %icons-section__item__icon--1 ;
+
   }
   &__para {
     font-family: Walsheim, sans-serif;
@@ -48,8 +118,8 @@
   }
   &__happy {
     @extend %icons-section__item__icon;
-    background: linear-gradient(41deg, #ff416c -4.02%, #ff4b2b 104.02%);
-    box-shadow: 8px 8px 15px rgba(255, 73, 55, 0.15);
+    @extend %icons-section__item__icon--2 ;
+
   }
   &__para2 {
     font-family: Walsheim, sans-serif;
@@ -63,8 +133,8 @@
   }
   &__graphic {
     @extend %icons-section__item__icon;
-    background: linear-gradient(90deg, #1a2980 0%, #26d0ce 100%);
-    box-shadow: 8px 8px 15px rgba(37, 198, 201, 0.15);
+    @extend %icons-section__item__icon--3 ;
+
   }
   &__para3 {
     font-family: Walsheim, sans-serif;
@@ -78,8 +148,8 @@
   }
   &__tool {
     @extend %icons-section__item__icon;
-    background: linear-gradient(41deg, #f46b45 -4.02%, #eea849 104.02%);
-    box-shadow: 8px 8px 15px rgba(239, 157, 72, 0.15);
+    @extend %icons-section__item__icon--4 ;
+
   }
   &__para4 {
     font-family: Walsheim, sans-serif;
