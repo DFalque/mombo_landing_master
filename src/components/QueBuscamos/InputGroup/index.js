@@ -9,7 +9,7 @@ export class InputGroup extends Component {
         <input
           className="que-buscamos__input"
           type="text"
-          placeholder="Envía un corre a mombo@gmail.com"
+          placeholder="Envía un correo a mombo@gmail.com"
         />
         <div className="que-buscamos__desktop-button">
           <Button />

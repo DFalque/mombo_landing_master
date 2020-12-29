@@ -12,7 +12,7 @@ export class Modal extends Component {
           <div className="app__video__header">
             <CloseButton close={close} />
           </div>
-          <h1>Our App</h1>
+          <h1>App móvil para usuarios</h1>
           <Frame />
         </div>
       </div>

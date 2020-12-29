@@ -23,8 +23,16 @@
     padding: 0.3125rem;
     max-width: 37.5rem;
     display: flex;
+    //flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
+
+    @include use-breakpoint("md") {
+      flex-direction: row;
+      justify-content: space-between;
+
+  
+    }
   }
 
   &__input {
@@ -75,7 +83,7 @@
   &__desktop-button {
     display: none;
 
-    @include use-breakpoint($merge-button-breakpoint) {
+    @include use-breakpoint("md") {
       display: flex;
       align-items: center;
     }
@@ -86,7 +94,7 @@
     display: flex;
     justify-content: center;
 
-    @include use-breakpoint($merge-button-breakpoint) {
+    @include use-breakpoint("md") {
       display: none;
     }
   }

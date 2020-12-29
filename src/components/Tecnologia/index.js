@@ -23,9 +23,9 @@ const Tecnologia = () => {
               <h5 className="tecnologia__titulo">Llega a tu mercado</h5>
             </div>
             <p className="tecnologia__paragraph">
-              No importa si te dedicas a un nicho específico, a una localización
-              geográfica en concreto o a varios mercados diferentes, asociamos
-              tu contenido con tu cliente potencial .
+              Dedicate a un nicho específico, a una localización geográfica en
+              concreto o a varios mercados diferentes. Asociaremos tu contenido
+              con tu cliente potencial.
             </p>
           </div>
         </div>
@@ -74,9 +74,9 @@ const Tecnologia = () => {
               <h5 className="tecnologia__titulo">Más herramientas</h5>
             </div>
             <p className="tecnologia__paragraph">
-              Nuestra plataforma nace con el objetivo de seguir ofreciendo
-              recursos y herramientas a las agencias, como bots, itinerarios
-              inteligentes, canal de proveedores exlcusivos, etc.
+              Ofrecemos recursos y herramientas a las agencias de viaje como
+              itinerarios inteligentes, Chatbots, Inteligencia Artificial,
+              proveedores, etc.
             </p>
           </div>
         </div>

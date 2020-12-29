@@ -2,14 +2,15 @@ import React from "react"
 import Image from "gatsby-image"
 
 import { sectionIds } from "../constants/sections"
+import Play from "../images/play.svg"
 
 const Nosotros = ({ image }) => (
   <div className="nosotros__container" id={sectionIds.nosotros}>
     <div className="nosotros__introduction">
       <p className="nosotros__inntroductionText">Sobre Nosotros</p>
       <h2 className="nosotros__inntroductionTittle">
-        “Mombo existe para mejorar la forma en la que viajamos y conocemos el
-        mundo e inspirar a las personas a seguir viajando”
+        “Nuestro objetivo es mejorar la forma en la que viajamos y conocemos el
+        mundo.”
       </h2>
       <div className="nosotros__line"></div>
     </div>
@@ -28,7 +29,16 @@ const Nosotros = ({ image }) => (
           nuevos retos que se presentan, quédate y echa un vistazo.
         </p>
         <div style={{ marginTop: "60px" }}>
-          <a className="nosotros__link">Ver Presentación</a>
+          <button className="nosotros__button">
+            Ver Presentación
+            <Play
+              style={{
+                width: "20px",
+                height: "20px",
+                marginLeft: "15px",
+              }}
+            />
+          </button>
         </div>
       </div>
       <div className="nosotros__mainImagen">

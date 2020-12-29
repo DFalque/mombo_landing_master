@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 import ImgApp from "./App"
 import Modal from "./Modal"
+import Play from "../../images/play.svg"
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,6 +30,13 @@ const App = () => {
             <div>
               <button className="app__varapp" onClick={open}>
                 Ver App
+                <Play
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    marginLeft: "15px",
+                  }}
+                />
               </button>
             </div>
           </div>

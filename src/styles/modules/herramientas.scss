@@ -3,19 +3,88 @@
     @extend %icons-section;
   }
   &__explicacionHerramientas {
-    @extend %icons-section__content;
+    //@extend %icons-section__content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+  
+    @include use-breakpoint("md") {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+  
+    }
   }
   &__explicacionHerrameintasApartado {
-    @extend %icons-section__item;
+    //@extend %icons-section__item;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    
+  
+    @include use-breakpoint("sm") {
+      margin: auto;
+      width: 50%;
+  
+    }
+  
+    @include use-breakpoint("md") {
+      margin: 0;
+     // flex-direction: row;
+      width: 25%;
+  
+    }
+
   }
   &__body {
-    @extend %icons-section__item__body;
+    //@extend %icons-section__item__body;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+  
+    @include use-breakpoint("md") {
+      width: 75%;
+    }  
+    
+  
+    @include use-breakpoint("md") {
+      width: 90%;
+    }
+
   }
   &__titulo {
-    @extend %icons-section__item__title;
+    //@extend %icons-section__item__title;
+    font-family: Walsheim, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 15px;
+
   }
   &__parrafo {
-    @extend %icons-section__item__paragraph;
+   // @extend %icons-section__item__paragraph;
+   font-family: Walsheim, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 22px;
+   letter-spacing: 0px;
+   text-align: left;
+   margin-top: 0;
+   margin-bottom: 20px
+
+
   }
 
   &__heading1 {

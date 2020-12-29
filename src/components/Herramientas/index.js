@@ -2,7 +2,7 @@ import React from "react"
 import Profile from "./Profile"
 import ChartBar from "./ChartBar"
 import Notes from "./Notes"
-import Chat from "./Chat"
+import Chats from "../../images/chats.svg"
 
 const Herramientas = () => {
   return (
@@ -54,7 +54,7 @@ const Herramientas = () => {
         </div>
         <div className="herramientas__explicacionHerrameintasApartado">
           <div className="herramientas__chat">
-            <Chat />
+            <Chats />
           </div>
           <div className="herramientas__body">
             <h5 className="herramientas__titulo">Chat 24h</h5>
