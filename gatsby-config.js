@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Mombo Agecias`,
+    title: `Mombo Agencias`,
     description: `Plataforma para agencias`,
     author: `@Mombo`,
   },
@@ -25,6 +25,12 @@ module.exports = {
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "src/images/logo.png",
+      },
+    },
 
     {
       resolve: `gatsby-transformer-remark`,

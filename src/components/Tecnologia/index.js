@@ -42,7 +42,7 @@ const Tecnologia = () => {
             <p className="tecnologia__paragraph">
               Conoce las preferencias de los viajeros sin preguntarselo,
               organiza itinerarios interactivos con ellos, olvidate de los
-              corrreos y pásate al chat 24/7.
+              correos y pásate al chat 24/7.
             </p>
           </div>
         </div>
