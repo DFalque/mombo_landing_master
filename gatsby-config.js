@@ -28,6 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: "Mombo Agencias",
+        short_name: "Mombo",
         icon: "src/images/logo.png",
       },
     },
