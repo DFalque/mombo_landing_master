@@ -88,4 +88,46 @@
     display: flex;
     justify-content: center;
   }
+  &__video {
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+
+    &__header {
+      display: flex;
+      justify-content: flex-end;
+
+      &__close {
+        border: none;
+        padding: 0.5rem;
+        font-size: 2rem;
+        background: none;
+        border-radius: 50%;
+        color: gray;
+
+        &:hover {
+          background-color: whitesmoke;
+        }
+      }
+    }
+
+    &__contents {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include use-breakpoint("md") {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
 }
