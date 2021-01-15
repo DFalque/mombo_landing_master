@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <h3 className="footer__title">mombo</h3>
       </div>
-      <p className="footer__correo">mombo@gmail.com</p>
+      <p className="footer__correo">mombo.viajes@gmail.com</p>
       <p className="footer__copywrite">
         Copyright {new Date().getFullYear()} By Mombo S.L
       </p>
