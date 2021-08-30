@@ -4,8 +4,3 @@
   }
 }
 
-@mixin use-breakpoint($size) {
-  @media (min-width: map-get($map: $breakpoints, $key: $size)) {
-    @content;
-  }
-}
